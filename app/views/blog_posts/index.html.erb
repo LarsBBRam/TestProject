@@ -1,0 +1,10 @@
+<h1>Hei bloggen 👋</h1>
+<% @blogposts.each do |post| %>
+
+    <h3>Bloggtittel: </h3><%= post.title %> <br>
+    <%= post.content%><br>
+    <p>Released at:</p> <%= post.release_date%>
+
+<% end %>
+
+<%= link_to "Post new blogpost", new_blog_post_path%>
