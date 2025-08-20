@@ -68,3 +68,6 @@ class PostsController < ApplicationController
       params.expect(post: [ :title, :body ])
     end
 end
+
+# Just checking if the git commit actually works.
+
